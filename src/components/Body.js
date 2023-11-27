@@ -1,13 +1,14 @@
 import Rescards from "./Rescards";
 import resList from "../utils/mockData";
 import { useState } from "react";
-
+import Search from "./Search";
 
 const Body = () => {
     //local state variable
     const [ListOfRes, setListOfRes] = useState(resList);
     return (
         <div className="body">
+                <Search/>
             <div>
                 <button className="filter" onClick={() => {
                     const filteredList = ListOfRes.filter((res)=>res.info.avgRating > 4);
