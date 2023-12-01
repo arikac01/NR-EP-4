@@ -76,3 +76,5 @@ React Components are like Methods, and Props are arguments that are passed to me
 An application can be dynamic based on it's location used.
 To make the application dynamic based on data or config, we use config driven UI.
 It means that UI is controlled by config. The data and config comes from backend.
+
+

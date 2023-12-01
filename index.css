@@ -12,7 +12,7 @@
     height: 140px;
     background-color: bisque;
 }
-.navLogo{
+.navLogo {
     width: 50px;
     height: 50px;
     margin: auto;
@@ -23,7 +23,7 @@
     list-style-type: none;
     padding: 15px;
 }
-.nav-items > ul> li:hover{
+.nav-items > ul> li:hover, .logbtn:hover{
     background-color: rgb(253, 241, 214);
     color: rgb(39, 24, 23);
     border: 2px solid rgb(21, 21, 21);
@@ -31,6 +31,23 @@
     cursor: pointer;
     box-shadow: 5px 3px 10px rgb(44, 44, 44);
     transform:scale(1.1);
+}
+.logbtn:hover{
+    background-color:rgb(254, 106, 0);
+}
+.logbtn{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid rgb(254, 106, 0);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    text-shadow: -2px 3px 4px rgb(254,106, 0,1);
+    background-color: rgb(249, 247, 216);
+}
+.loglogo{
+    width: 20px;
+    height: 20px;
 }
 .nav-items > ul > li{
     display: flex;
@@ -41,7 +58,12 @@
     color: black;
     background-color: rgb(249, 247, 216);
 }
-.filter{
+.bodyHeader, .searchbox{
+    display: flex;
+    justify-content:start;
+}
+.filter, #searchbox{
+    box-sizing: border-box;
     margin: auto;
     width: 200px;
     height:50px;
@@ -52,23 +74,24 @@
     margin: 10px;
     background-color: bisque;
 }
-.filter:hover{
+#searchbtn{
+    width: auto;
+    border-radius: 50%;
+    margin: auto;
+    height: auto;
+    border: 3px solid rgb(200, 92, 14);
+    background-color: bisque;
+}
+.filter:hover, #searchbtn:hover{
     box-shadow: 2px 5px 5px rgb(61, 60, 60);
     cursor: pointer;
 }
-#searchbox{
-    margin: auto;
-    width: 200px;
-    height:50px;
-    color: rgb(88, 55, 61);
-    border-radius: 45px;
-    border: 2px solid rgb(200, 92, 14);
-    text-align: center;
-    margin: 10px;
-    background-color: bisque;
-}
 #searchbox:hover{
     box-shadow: 2px 5px 5px rgb(61, 60, 60);
+}
+#searchlogo{
+    width: 35px;
+    height: 35px;
 }
 .rescards{
     width: 250px;
@@ -117,4 +140,29 @@
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+}
+.shimmerContainer{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.shimmerCards{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align at the bottom */
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: 5px 3px 10px rgb(44, 44, 44);
+    text-align: center;
+    background-color: rgb(219, 218, 218);
+    height: 300px;
+}
+.shimmerDetails{
+    margin: 14px auto;
+    width: 80%;
+    height: 13px;
+    bottom: 0;
+    border-radius: 50px;
+    background-color: rgb(161, 161, 161);
 }
