@@ -74,8 +74,6 @@ React Components are like Methods, and Props are arguments that are passed to me
 # Config Driven UI
 
 An application can be dynamic based on it's location used.
-To make the application dynamic based on data or config, we use config driven UI.
-It means that UI is controlled by config. The data and config comes from backend.
 
 
 # NR EP 5
@@ -119,3 +117,5 @@ React has this concept of state, which are variables that hold data that our com
 The hook takes a single optional argument: an initial value for the state. Then it returns an array of two values:
 => The state variable
 => A function to update the state
+To make the application dynamic based on data or config, we use config driven UI.
+It means that UI is controlled by config. The data and config comes from backend.
