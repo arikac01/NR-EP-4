@@ -4,11 +4,15 @@ import home from "/Assets/home-svgrepo-com.png";
 import contact from "/Assets/gui-contacts-svgrepo-com.png";
 import cart from "/Assets/cart-svgrepo-com.png";
 import loglogo from "/Assets/log-logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [logbtn, setLogBtn] = useState("LogIn");
 
+   useEffect(()=>{
+    console.log("useEffect called");
+   },[logbtn]); 
     return (
         <div className="header">
             <div className="logo-container">
@@ -16,10 +20,10 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <ul>
-                    <li><img className="navLogo" src={home} /></li>
-                    <li><img className="navLogo" src={contact} /></li>
-                    <li><img className="navLogo" src={about} /></li>
-                    <li><img className="navLogo" src={cart} /></li>
+                    <li><Link to="/"><img className="navLogo" src={home} /></Link></li>
+                    <li><Link to="/contactus"><img className="navLogo" src={contact} /></Link></li>
+                    <li><Link to="/about"><img className="navLogo" src={about} /></Link></li>
+                    <li><Link to="/cart"><img className="navLogo" src={cart} /></Link></li>
                     <button className="logbtn" onClick={() => {
                         logbtn === "LogIn" ?
                         setLogBtn("LogOut") : setLogBtn("LogIn");
